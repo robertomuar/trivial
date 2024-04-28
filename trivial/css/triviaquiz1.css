@@ -1,0 +1,211 @@
+body {
+    background-image: url(../Imagenes/imagen1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; 
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    margin: 0px;
+}
+header{
+    width: 100vw;
+    height: 5vh;
+/*     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; */
+}
+footer{
+    width: 100vw;
+    height: 5vh;
+}
+.ZonaDePreguntas{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.imagenquiz{
+    width: 65vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.respuestas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 35vw;
+    height: 80vh;
+    text-wrap: wrap;
+    white-space: normal;
+}
+.primeraQ, .segundaQ, .terceraQ, .cuartaQ{
+    width: 25vw;
+    height: 20vh;
+    box-sizing: border-box;
+    margin: 0px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: -38px;
+}
+/* .primeraQ, .terceraQ{
+    padding-right: 50px;
+}
+.segundaQ, .cuartaQ{
+    padding-left: 50px;
+}
+.terceraQ, .cuartaQ{
+    padding-bottom: 40px;
+}
+.primeraQ, .segundaQ{
+    padding-top: 40px;
+} */
+button:nth-child(-n+4){
+    border: 2px white solid;
+    border-radius: 20px;
+    padding: 13px;
+    font-family: monospace;
+    font-size: 18px;
+    color: white;
+    width: 30vw;
+    height: 10vh;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.123);
+/*     background-color: rgba(255, 255, 255, 0.123); */
+}
+/* .primeraQ, .terceraQ {
+    justify-content: flex-end;
+}
+
+.segundaQ, .cuartaQ {
+    justify-content: flex-start;
+} */
+span.imagenquiz{
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 35px;
+    font-family: monospace;
+    font-size: 22px;
+    color: white;
+    width: 26vw;
+    height: 13vh;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.123);
+}
+img.usuario{
+    width: 5vw;
+    height: auto;
+    margin-left: 15px;
+    border: 7px red solid;
+    border-radius: 100px;
+}
+img.usuariojugador{
+    width: 5vw;
+    height: auto;
+    margin-left: 15px;
+    border: 7px green solid;
+    border-radius: 100px;
+}
+.timer{
+    font-size: 25px;
+    font-family: sans-serif;
+    letter-spacing: -1.5px;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+    background-color: rgba(255, 255, 255, 0.052);
+    height: 4vh;
+    border-radius: 4px;
+    padding-left: 3px;
+    padding-right: 0px;
+    width: 4.3vw;
+    position: relative;
+    left: 200px;
+    margin-bottom: 1.5px;
+    color: white;
+}
+p.titulo{
+    transform: rotate(90deg);
+    font-size: 15px;
+    padding: 0px 0px 0px 4px;
+    letter-spacing: -3px;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    top: -13px;
+    left: -1px;
+    padding-right: 3px;
+}
+div.log{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+h2{
+    font-size: 20px;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+h1{
+    font-size: 37px;
+    font-family: impact;
+    letter-spacing: 1px;
+    color: white;
+    position: relative;
+    bottom: 2.3em;
+    border-bottom: 2px white solid;
+    padding: 5px;
+    border-radius: 7px;
+    border-top: 2px white solid;
+    right: 7.2em;
+/*     text-decoration: underline; */
+}
+
+.right {
+    background-color: green !important;
+}
+
+.wrong {
+    background-color: red !important;
+}
+
+.righthighlighted {
+    background-color: blue !important;
+}
+
+.waitingright {
+    animation-name: waiting;
+    animation-duration: 4s;
+}
+
+/* @keyframes waiting {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+} */
+
+@keyframes waiting {
+    25%     {color: black; background-color: rgb(228, 159, 69);}
+    50%     {color: rgb(228, 159, 69); background-color: rgb(187, 11, 11);}
+    75%     {color: rgb(187, 11, 11); background-color: snow;}
+    90%     {color: snow; background-color: black;}
+}
